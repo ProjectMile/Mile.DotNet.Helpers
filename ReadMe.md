@@ -19,6 +19,22 @@ If you want to include Git helpers, please set the following option.
 <MileDotNetHelpersEnableGitHelpers>true</MileDotNetHelpersEnableGitHelpers>
 ```
 
+If you want to include ImageAssets helpers, please set the following option.
+
+```
+<MileDotNetHelpersEnableImageAssetsHelpers>true</MileDotNetHelpersEnableImageAssetsHelpers>
+```
+
+The ImageAssets helpers also require Magick.NET. Using the latest stable version
+is recommended to receive the latest security fixes. Add the following package
+reference to your project.
+
+```
+<ItemGroup Condition="'$(MileDotNetHelpersEnableImageAssetsHelpers)' == 'true'">
+  <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="*" />
+</ItemGroup>
+```
+
 If you want to include Text helpers, please set the following option.
 
 ```
