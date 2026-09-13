@@ -3,6 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>default</LangVersion>
+    <MileDotNetHelpersSourceRoot>$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers\</MileDotNetHelpersSourceRoot>
   </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers.NuGet\Mile.DotNet.Helpers.props" />
+  <!--
+    Do something after importing the Mile.DotNet.Helpers.props file but before
+    importing the targets file.
+  -->
+  <Import Project="$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers.NuGet\Mile.DotNet.Helpers.targets" />
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers\**\*">
+      <Link>Mile.DotNet.Helpers\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Pack>false</Pack>
+    </None>
+  </ItemGroup>
 
 </Project>

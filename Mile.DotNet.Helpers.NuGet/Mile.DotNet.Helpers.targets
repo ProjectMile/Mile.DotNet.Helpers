@@ -10,6 +10,6 @@
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Condition="'$(MileDotNetHelpersEnableTestFeature)' == 'true'">
-    <!-- <Compile Visible="false" Include="$(MSBuildThisFileDirectory)..\..\Source\Managed\Test.cs"/> -->
+    <!-- <Compile Visible="false" Include="$(MileDotNetHelpersSourceRoot)Test.cs"/> -->
   </ItemGroup>
 </Project>
