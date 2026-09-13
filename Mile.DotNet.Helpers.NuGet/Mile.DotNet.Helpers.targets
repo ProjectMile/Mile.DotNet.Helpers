@@ -9,7 +9,7 @@
   MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Condition="'$(MileDotNetHelpersEnableTestFeature)' == 'true'">
-    <!-- <Compile Visible="false" Include="$(MileDotNetHelpersSourceRoot)Test.cs"/> -->
+  <ItemGroup Condition="'$(MileDotNetHelpersDisableAllFeatures)' != 'true'">
+    <Compile Condition="'$(MileDotNetHelpersEnableGitHelpers)' == 'true'" Visible="false" Include="$(MileDotNetHelpersSourceRoot)Git.cs"/>
   </ItemGroup>
 </Project>

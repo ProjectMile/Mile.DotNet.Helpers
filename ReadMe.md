@@ -6,10 +6,17 @@ The essential helper functions for the .NET platform.
 
 ## Available MSBuild project options
 
-If you don't want to include test feature, please set the following option.
+If you want to disable all features from Mile.DotNet.Helpers, please set the
+following option.
 
 ```
-<MileDotNetHelpersEnableTestFeature>true</MileDotNetHelpersEnableTestFeature>
+<MileDotNetHelpersDisableAllFeatures>true</MileDotNetHelpersDisableAllFeatures>
+```
+
+If you want to include Git helpers, please set the following option.
+
+```
+<MileDotNetHelpersEnableGitHelpers>true</MileDotNetHelpersEnableGitHelpers>
 ```
 
 ## Documents

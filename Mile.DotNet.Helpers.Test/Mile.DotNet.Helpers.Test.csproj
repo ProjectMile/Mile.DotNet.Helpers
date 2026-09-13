@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>default</LangVersion>
     <MileDotNetHelpersSourceRoot>$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers\</MileDotNetHelpersSourceRoot>
+    <MileDotNetHelpersEnableGitHelpers>true</MileDotNetHelpersEnableGitHelpers>
   </PropertyGroup>
 
   <Import Project="$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers.NuGet\Mile.DotNet.Helpers.props" />
