@@ -18,7 +18,7 @@ namespace Mile.DotNet.Helpers
         private static readonly Lazy<Encoding> m_StrictAscii = new Lazy<Encoding>(
             () => CreateStrictEncoding(20127));
 
-        public static Encoding PureAscii
+        public static Encoding StrictAscii
         {
             get => m_StrictAscii.Value;
         }
