@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:    Mouri Internal Library Essentials
+  FILE:       Mile.DotNet.Helpers.nuspec
+  PURPOSE:    NuGet package definition for Mile.DotNet.Helpers
+
+  LICENSE:    The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mile.DotNet.Helpers</id>
+    <version>$version$</version>
+    <description>The essential helper functions for the .NET platform</description>
+    <authors>Kenji Mouri</authors>
+    <projectUrl>https://github.com/ProjectMile/Mile.DotNet.Helpers</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">License.md</license>
+    <readme>ReadMe.md</readme>
+    <repository type="git" url="https://github.com/ProjectMile/Mile.DotNet.Helpers.git" />
+  </metadata>
+  <files>
+  
+    <file src="..\Mile.DotNet.Helpers\**\*.*" target="Source\Managed" />
+
+    <file src="Mile.DotNet.Helpers.props" target="build\netstandard2.0" />
+    <file src="Mile.DotNet.Helpers.targets" target="build\netstandard2.0" />
+
+    <file src="..\ReadMe.md" target="." />
+    <file src="..\License.md" target="." />
+    <file src="..\ReleaseNotes.md" target="." />
+
+  </files>
+</package>
