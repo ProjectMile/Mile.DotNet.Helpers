@@ -19,6 +19,12 @@ If you want to include Git helpers, please set the following option.
 <MileDotNetHelpersEnableGitHelpers>true</MileDotNetHelpersEnableGitHelpers>
 ```
 
+If you want to include Text helpers, please set the following option.
+
+```
+<MileDotNetHelpersEnableTextHelpers>true</MileDotNetHelpersEnableTextHelpers>
+```
+
 ## Documents
 
 - [License](License.md)

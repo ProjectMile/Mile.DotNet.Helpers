@@ -5,6 +5,7 @@
     <LangVersion>default</LangVersion>
     <MileDotNetHelpersSourceRoot>$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers\</MileDotNetHelpersSourceRoot>
     <MileDotNetHelpersEnableGitHelpers>true</MileDotNetHelpersEnableGitHelpers>
+    <MileDotNetHelpersEnableTextHelpers>true</MileDotNetHelpersEnableTextHelpers>
   </PropertyGroup>
 
   <Import Project="$(MSBuildThisFileDirectory)..\Mile.DotNet.Helpers.NuGet\Mile.DotNet.Helpers.props" />
